@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Stalk Market</string>
+    <string name="title_activity_stalk_market">StalkMarketActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+</resources>
