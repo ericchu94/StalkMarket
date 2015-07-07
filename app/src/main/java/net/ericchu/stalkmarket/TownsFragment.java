@@ -25,7 +25,10 @@ public class TownsFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_towns, container, false);
 
         townsAdapter = new TownsAdapter(getActivity(), new ArrayList<Town>());
-        townsAdapter.add(new Town("Haliby"));
+        Town town = new Town("Haliby");
+        town.sell = true;
+        town.favorite = true;
+        townsAdapter.add(town);
         townsAdapter.add(new Town("Epsilon"));
         townsAdapter.add(new Town("Epsilon"));
         townsAdapter.add(new Town("Epsilon"));

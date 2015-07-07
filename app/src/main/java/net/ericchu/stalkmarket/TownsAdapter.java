@@ -28,6 +28,10 @@ public class TownsAdapter extends ArrayAdapter<Town> {
 
         name.setText(town.name);
         sell.setText(town.sell ? "Sell" : "Hold");
+        if (town.favorite)
+            convertView.setBackgroundResource(R.color.colorPrimaryLight);
+        else
+            convertView.setBackgroundResource(0);
 
         return convertView;
     }
