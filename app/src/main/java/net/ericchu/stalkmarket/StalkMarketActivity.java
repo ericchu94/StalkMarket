@@ -10,5 +10,11 @@ public class StalkMarketActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stalk_market);
+
+        if (savedInstanceState != null)
+            return;
+
+        TownsFragment towns = new TownsFragment();
+        getFragmentManager().beginTransaction().add(R.id.frameLayout, towns).commit();
     }
 }
