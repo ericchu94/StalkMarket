@@ -6,6 +6,7 @@
     tools:context="net.ericchu.stalkmarket.TownsFragment">
 
     <ListView
+        android:id="@+id/towns"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
